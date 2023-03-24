@@ -22,3 +22,13 @@ Next I had to simply the players names in order to get them to merge together th
  - Removed special characters from names (Ex: Dragić -> Dragic)
  - Removed "III", "II", "Jr", "Sr", and "." the ends of player names
 
+Then after merging these two databases togehter I was left with 440 rows or players to analyze.
+
+## Looking For Undervalued Players
+Now after making our dataset to our liking we get to finding players that me deem "undervauled" and building our roster. To start we have to choose what metrics I deem are the most important to me such as 
+
+In this project, I utilized metrics and linear regression modeling to identify undervalued basketball players. By analyzing the dataset containg a range of player statistics, I developed a model that took into account the TS%, WS, PER, and BPM features.
+- True Shooting Percentage (TS%): This is a measure of shooting efficiency that takes into account two-point field goals, three-point field goals, and free throws. It is calculated as total points divided by total field goal attempts.
+- WS (Win Shares): This is a statistic that attempts to measure a player's overall contribution to winning games. It takes into account offensive and defensive performance as well as playing time.
+- Player Efficiency Rating (PER): This is a rating of a player's overall per-minute productivity. It takes into account a range of statistics, including points, rebounds, assists, steals, and blocks.
+- Box Plus/Minus (BPM): This is a measure of a player's overall impact on the game, taking into account both offensive and defensive performance as well as playing time. It is expressed as the number of points per 100 possessions above or below the league average that a player contributes when on the court.
