@@ -9,12 +9,14 @@ The objective of this project was to identify undervalued NBA players from the 2
 I got this data set from [Basketball Reference 2021-22 player statsitcs](https://www.basketball-reference.com/leagues/NBA_2022_per_game.html) using their "Share & Export" function that allows you to export the data to a csv file. I did this for both the "Per Game" and "Advanced" statsitcs pages. As well as I there is an option to "Hide Partail Rows" that hides the multiple rows of a player statsitcs. This occurs when a player is either traded or realsed and signed by a new team during the NBA season. Then manualy combing the two datasets into one using Excel, givng me one collective dataset with both "Per Game" and "Advanced" statsitcs.
 
 ### 2021-22 Player Salaries
-I got this data from web scrapping the [ESPN NBA Player Salaries 2021-2022](http://www.espn.com/nba/salaries/_/year/2022) using python. You can find the code I used for this here.
+I got this data from web scrapping the [ESPN NBA Player Salaries 2021-2022](http://www.espn.com/nba/salaries/_/year/2022) using python. You can find the code I used for this here. It should noted that I could never figure out a way to elminate the code from printing "NAME" and "SALARY" as new data when trying the different pages of the data source. So due to this I had to manually delete the duplicate values in the Excel file.
 
 ### Cleaning and Merging the Datasets
 In order to properly join these two dataset it required some cleaning up at first.
 
-I first decided to clean up the players statisitics database first. My first move was to delete the first column of the database as it would be of no use as it's ranks Basketball Reference ranking of the players and would be no use for this project.
+First, I deleted the players who had null values in their statistics, except for the "3P%" column. This mainly occurred for players who play the center position ("C"). Since a team requires a center, I did not want to eliminate centers from this project. Therefore, I chose to allow players with null values in this particular column.
+
+Then I decided to clean up the players statisitics database first. My first move was to delete the first column of the database as it would be of no use as it's ranks Basketball Reference ranking of the players and would be no use for this project.
 
 Next I had to simply the players names in order to get them to merge together the two datasets as I would be using the player names as the unique identifer to link their statsitcs to the salary they recived in the 2021-22 season.
  - Removed special characters from names (Ex: Dragić -> Dragic)
