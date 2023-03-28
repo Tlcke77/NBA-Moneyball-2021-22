@@ -25,12 +25,12 @@ Next I had to simply the players names in order to get them to merge together th
 Then after merging these two databases togehter I was left with 440 rows or players to analyze.
 
 ## Looking For Undervalued Players
-Now after making our dataset to our liking we get to finding players that me deem "undervauled" and building our roster. To start we have to choose what metrics I deem are the most important to me such as 
+In my analysis of NBA players, I used the formula Value = (PER + BPM + VORP) / 3 to determine each player's overall value. This formula takes into account a player's efficiency (as measured by player efficiency rating, or PER), his impact on his team's performance (as measured by box plus/minus, or BPM), and his value compared to replacement-level players (as measured by value over replacement player, or VORP). By combining these metrics, the formula provides a comprehensive assessment of a player's contributions on both ends of the court. A higher value score indicates a more valuable player, and by comparing players' value scores, it's possible to identify undervalued players who may be overlooked by other metrics or rankings.
 
-In this project, I in order to identify undervalued basketball players I chose to use the "Real Plus-Minus" (RPM) system, which was developed by ESPN's analytics team. RPM is a proprietary metric that attempts to measure a player's overall impact on his team's performance, taking into account both offensive and defensive contributions, as well as other factors such as player usage rate and the quality of his teammates. RPM is calculated using a combination of play-by-play data and box score statistics, and is expressed in terms of "plus-minus" points per 100 possessions. The formula being RPM = 0.5 * (ORPM + DRPM) * (MP / 48) Where: Where:
+In order to further refine my analysis and evaluate players' value more accurately, I also factored in each player's salary using the formula Value per Salary = Value / Salary. This formula allows for a direct comparison of players' value per dollar of salary, which can help identify players who may be providing good value for their salary or those who may be overpaid.
 
-    ORPM is the player's offensive real plus-minus
-    DRPM is the player's defensive real plus-minus
-    MP is the player's total minutes played
+For example, a player with a high value score may not necessarily be a good value if he is being paid a large salary. On the other hand, a player with a lower value score may be considered a good value if he is being paid a relatively small salary.
+
+By combining the Value formula with the Value per Salary formula, I was able to identify players who were both highly valuable and providing good value for their salary. This allowed me to create a more comprehensive evaluation of each player's worth and to make more informed decisions when assessing player value.
 
 
