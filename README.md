@@ -27,8 +27,10 @@ Then after merging these two databases togehter I was left with 440 rows or play
 ## Looking For Undervalued Players
 Now after making our dataset to our liking we get to finding players that me deem "undervauled" and building our roster. To start we have to choose what metrics I deem are the most important to me such as 
 
-In this project, I utilized metrics and linear regression modeling to identify undervalued basketball players. By analyzing the dataset containg a range of player statistics, I developed a model that took into account the TS%, WS, PER, and BPM features.
-- True Shooting Percentage (TS%): This is a measure of shooting efficiency that takes into account two-point field goals, three-point field goals, and free throws. It is calculated as total points divided by total field goal attempts.
-- WS (Win Shares): This is a statistic that attempts to measure a player's overall contribution to winning games. It takes into account offensive and defensive performance as well as playing time.
-- Player Efficiency Rating (PER): This is a rating of a player's overall per-minute productivity. It takes into account a range of statistics, including points, rebounds, assists, steals, and blocks.
-- Box Plus/Minus (BPM): This is a measure of a player's overall impact on the game, taking into account both offensive and defensive performance as well as playing time. It is expressed as the number of points per 100 possessions above or below the league average that a player contributes when on the court.
+In this project, I in order to identify undervalued basketball players I chose to use the "Real Plus-Minus" (RPM) system, which was developed by ESPN's analytics team. RPM is a proprietary metric that attempts to measure a player's overall impact on his team's performance, taking into account both offensive and defensive contributions, as well as other factors such as player usage rate and the quality of his teammates. RPM is calculated using a combination of play-by-play data and box score statistics, and is expressed in terms of "plus-minus" points per 100 possessions. The formula being RPM = 0.5 * (ORPM + DRPM) * (MP / 48) Where: Where:
+
+    ORPM is the player's offensive real plus-minus
+    DRPM is the player's defensive real plus-minus
+    MP is the player's total minutes played
+
+
