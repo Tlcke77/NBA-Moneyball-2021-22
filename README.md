@@ -22,7 +22,7 @@ Next I had to simply the players names in order to get them to merge together th
  - Removed special characters from names (Ex: Dragić -> Dragic)
  - Removed "III", "II", "Jr", "Sr", and "." the ends of player names
 
-Then after merging these two databases togehter I was left with 440 rows or players to analyze.
+Then after merging these two databases togehter I was left with 478 rows or players to analyze.
 
 ## Looking For Undervalued Players
 In my analysis of NBA players, I used the formula Value = (PER + BPM + VORP) / 3 to determine each player's overall value, with the prerequisite that players must have played a minimum of 20 games and 15 minutes per game to be included in the analysis. This formula takes into account a player's efficiency (as measured by player efficiency rating, or PER), his impact on his team's performance (as measured by box plus/minus, or BPM), and his value compared to replacement-level players (as measured by value over replacement player, or VORP). By combining these metrics, the formula provides a comprehensive assessment of a player's contributions on both ends of the court. A higher value score indicates a more valuable player, and by comparing players' value scores, it's possible to identify undervalued players who may be overlooked by other metrics or rankings.
