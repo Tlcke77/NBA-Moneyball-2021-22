@@ -1,7 +1,7 @@
 # NBA Moneyball
 ![NBArdme](https://user-images.githubusercontent.com/83333358/227303726-1d76941f-0bc2-46e1-ab49-68d693e66896.jpg)
 
-## Intorduction
+## Introduction
 The objective of this project was to identify undervalued NBA players from the 2021-22 season and assemble a team composed of such players. The project subsequently employs a formula to predict the number of team wins based on relevant metrics, which will be elaborated upon in later sections
 
 ## Data
